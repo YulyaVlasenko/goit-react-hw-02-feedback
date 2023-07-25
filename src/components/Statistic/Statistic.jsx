@@ -1,23 +1,23 @@
-import { nanoid } from "nanoid"
+
 import PropTypes from 'prop-types';
 
 export const Statistic = ({good, neutral, bad, total, positivePercentage}) => {
     return (
         <>
             <ul>
-                <li key={nanoid()}>
+                <li>
                     <p>Good: {good}</p>
                 </li>
-                <li key={nanoid()}>
+                <li>
                     <p>Neutral: {neutral}</p>
                 </li>
-                <li key={nanoid()}>
+                <li>
                     <p>Bad: {bad}</p>
                 </li>
-                <li key={nanoid()}>
+                <li>
                     <p>Total: {total}</p>
                 </li>
-                <li key={nanoid()}>
+                <li>
                     <p>Positive percentage: {positivePercentage}%</p>
                 </li>
             </ul>

@@ -1,4 +1,4 @@
-import { nanoid } from "nanoid"
+
 import PropTypes from 'prop-types';
 
 
@@ -7,7 +7,7 @@ export const FeedbackOptions = ({ options, onLeaveFeedback }) => {
         <div>
                 {options.map(option => {
                 return (
-                    <button key={nanoid()} type='button' onClick={() => onLeaveFeedback(option)}>{option} </button>
+                    <button key={option} type='button' onClick={() => onLeaveFeedback(option)}>{option} </button>
                )      
         })} 
         </div>
